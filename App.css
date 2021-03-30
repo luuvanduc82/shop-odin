@@ -1,0 +1,491 @@
+a:link, a:visited{
+    color:black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+.head-infomation{
+    background-color:gainsboro;
+    display: flex;
+    font-family: 'Courier New', Courier, monospace;
+    height: 25px;
+    width: 100%px;
+    justify-content: center;
+    align-items: center;
+}
+.odin{
+    width: 100%;
+}
+.hotlinemua{
+    font-size: 14px;
+}
+.number1{
+    color: red;
+    font-size: 14px;
+}
+.number2{
+    font-weight: bold;
+    font-size: 14px;
+}
+.cskh{
+    font-weight: bold;
+    font-size: 14px;
+}
+.name{
+justify-content: center;
+align-items: center;
+text-align: right;
+cursor: pointer;
+width: 33.33%;
+display: flex;
+}
+.item{
+    display: flex;
+    text-align: right;
+    justify-content: center;
+    align-items: center;
+    width: 33.33%;
+}
+.body{
+    width: 100%;
+}
+.body2{
+    display: flex;
+    width: 100%;
+    height: 80px;
+}
+.item-menu{
+    padding-left: 20px;
+    font-size: 30px;
+    cursor: pointer;
+}
+.none{
+    width: 33.33%;
+}
+.conten{
+font-size: 15px;
+font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+cursor: pointer;
+padding-bottom: 10px;
+margin-left: 30px;
+position: relative;
+display: inline-block;
+}
+.dropdown{
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 130px;
+    margin-top: 13px;
+   
+}
+.conten:hover .dropdown{
+    display: block;
+}
+.conten-drop{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 11px;
+    display: flex;
+    height: 20px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    border-bottom: 1px solid rgb(228, 210, 210);
+    border-top: rgb(214, 199, 199);
+}
+.conten-drop:hover{
+    color: steelblue;
+    cursor: pointer;
+}
+.conten:hover{
+    border-bottom: 2px solid gray;
+
+}
+.body3{
+    display: flex;
+    width: 100vw;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+}
+.bst{
+    font-size: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    text-align: center;
+    height: 130px;
+}
+.img2{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.img-menu1{
+    display: flex;
+    cursor: pointer;
+    position: relative;
+}
+.conten-menu1{
+    position: absolute;
+    width: 408px;
+    height: 100px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    top: 298px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.img-menu2{
+    display: flex;
+    cursor: pointer;
+    position: relative;
+}
+.img-menu3{
+    display: flex;
+    cursor: pointer;
+    position: relative;
+}
+.conten1-menu1{
+    font-size: 26px;
+    color: white;
+    font-weight: bold;
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.conten2-menu1{
+    font-size: 17px;
+    font-weight: bold;
+   padding-top: 5px;
+}
+.conten2-menu{
+    width: 110px;
+    height: 30px;
+    background-color: white;
+    margin-left: 20px;
+    margin-top: 14px;
+}
+.conten2-menu:hover{
+    background-color:  rgba(0, 0, 0, 0.5);
+border: 1px solid white;
+color: white;
+}
+.conten-menu2{
+    position: absolute;
+    width: 408px;
+    height: 100px;
+    top: 298px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+.conten2-menu2{
+    font-size: 26px;
+    color: white;
+    font-weight: bold;
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.conten3-menu{
+    background-color: white;
+    width: 110px;
+    height: 30px;
+    margin-left: 20px;
+    margin-top: 14px;
+}
+.conten3-menu2{
+    padding-top: 5px;
+    font-weight: bold;
+    font-size: 17px;
+}
+.conten3-menu:hover{
+    background-color:  rgba(0, 0, 0, 0.5);
+border: 1px solid white;
+color: white;
+}
+.conten-menu3{
+    position: absolute;
+    width: 408px;
+    height: 100px;
+    top: 298px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+.conten3-menu3{
+    font-size: 26px;
+    color: white;
+    font-weight: bold;
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.conten4-menu{
+    background-color: white;
+    width: 110px;
+    height: 30px;
+    margin-left: 20px;
+    margin-top: 14px;
+}
+.conten4-menu3{
+    padding-top: 5px;
+    font-weight: bold;
+    font-size: 17px;
+}
+.conten4-menu:hover{
+    background-color:  rgba(0, 0, 0, 0.5);
+border: 1px solid white;
+color: white;
+}
+.spm{
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-family: cursive;
+    cursor: pointer;
+    height: 130px;
+    width: 100%;
+    padding-top: 30px;
+}
+.spm:hover{
+    color: teal;
+}
+.body4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.conten1-list1{
+    cursor: pointer;
+    font-size: 17px;
+padding-top: 8px;
+}
+.conten1-list1:hover{
+    color: teal;
+}
+.conten2-list1{
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+}
+.conten1-list2{
+    cursor: pointer;
+    font-size: 17px;
+padding-top: 8px;
+}
+.conten1-list2:hover{
+    color: teal;
+}
+.conten2-list2{
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+}
+.conten1-list3{
+    cursor: pointer;
+    font-size: 17px;
+padding-top: 8px;
+}
+.conten1-list3:hover{
+    color: teal;
+}
+.conten2-list3{
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+}
+.conten1-list4{
+    cursor: pointer;
+    font-size: 17px;
+padding-top: 8px;
+}
+.conten1-list4:hover{
+    color: teal;
+}
+.conten2-list4{
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+}
+.conten1-list5{
+    cursor: pointer;
+    font-size: 17px;
+padding-top: 8px;
+}
+.conten1-list5:hover{
+    color: teal;
+}
+.conten2-list5{
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+}
+.conten-list{
+    margin-left: 10px;
+}
+.conten-list1{
+    margin-left: 10px;
+}
+.spbc{
+   width: 100%;
+   height: 130px;
+font-size: 50px;
+font-family: cursive;
+text-align: center;
+padding-top: 35px;
+font-weight: bold;
+cursor: pointer;
+}
+.spbc:hover{
+    color: teal;
+}
+.list-body5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.list-img{
+    margin-left: 10px;
+}
+.conten1-img5{
+    cursor: pointer;
+    font-size: 17px;
+padding-top: 8px;
+}
+.conten1-img5:hover{
+    color: teal;
+}
+.conten2-img5{
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+}
+.list2-body5{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.list-img1{
+    margin-left: 10px;
+}
+.conten3-img5{
+    cursor: pointer;
+    font-size: 17px;
+padding-top: 8px;
+}
+.conten3-img5:hover{
+    color: teal;
+}
+.conten4-img5{
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+}
+.conten1-img{
+    margin-top: 20px;
+}
+.wrapper{
+    height: 30px;
+    width: 500px;
+}
+.text-dk{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    position: relative;
+    background-color:#8f8c8ccb ;
+    width: 100%;
+}
+.dk{
+    background-color: hsl(180, 6%, 65%);
+    
+    width: 100px;
+    height: 37px;
+    font-size: 17px;
+    color: white;
+   text-align: center;
+    cursor: pointer;
+}
+.dk:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+.dangky{
+    padding-top: 10px;
+}
+.body6{
+    display: flex;
+    height: 300px;
+    width: 100%;
+    margin-top: 30px;
+}
+.company{
+    width: 25%;
+    height:200px ;
+    margin-left: 10px;
+}
+.ct{
+    font-size: 20px;
+    font-weight: bold;
+}
+.infct{
+    margin-top: 20px;
+}
+.infct1{
+    font-size: 17px;
+    margin-top: 10px;
+}
+.infimg1{
+    display: flex;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.infimg{
+    padding-top: 25px;
+    cursor: pointer;
+}
+.infct2{
+    font-size: 17px;
+    font-weight: bold;
+    padding-top: 5px;
+}
+.infct3{
+    font-size: 17px;
+    font-weight: bold;
+    color: red;
+    cursor: pointer;
+    text-decoration:underline;
+    padding-top: 5px;
+}
+.infct1:hover{
+ color: teal;
+}
+.finish{
+    width: 100%;
+    height: 100px;
+    background-color:  hsl(180, 6%, 65%);
+    align-items: center;
+    
+    text-align: center;
+}
+.kt{
+    font-size: 17px;
+    padding-top: 40px;
+}
+.buttom-scroll{
+    position: fixed;
+  width: 70px;
+  height: 70px;
+  background-color: rgb(196, 69, 69);
+  color: white ;
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  bottom: 80px;
+  right: 50px;
+}

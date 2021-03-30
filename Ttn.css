@@ -1,0 +1,75 @@
+.body4ht{
+    width: 100%;
+    height: 40px;
+    background-color: rgb(218, 208, 208);
+    display: flex;
+    align-items: center;
+}
+.trangchu{
+    font-size: 17px;
+    font-weight: bold;
+    padding-left: 10px;
+    cursor: pointer;
+}
+.hethong{
+    font-size: 16px;
+    padding-left: 10px;
+}
+.danhmuc{
+    border: 1px solid rgb(218, 213, 213);
+    width: 320px;
+    height: 180px;
+    margin-top: 40px;
+    margin-left: 40px;
+    border-radius: 4px;
+    
+}
+.dmt{
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+    height: 40px;
+    width: 280px;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+.infdmt1{
+    font-size: 17px;
+    margin-top: 10px;
+    margin-left: 15px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    cursor: pointer;
+}
+.body5ht{
+    display: flex;
+}
+.htchct1{
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 35px;
+    margin-left: 20px;
+}
+.htred{
+    font-size: 30px;
+    color: red;
+    font-weight: bold;
+}
+.htchct3{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.address{
+    font-size: 15px;
+}
+.htchct2{
+    margin-top: 30px;
+    margin-left: 20px;
+}
+.imghd{
+    margin-left: 20px;
+    margin-top: 20px;
+}

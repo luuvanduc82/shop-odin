@@ -1,0 +1,143 @@
+a:link, a:visited{
+    color: rgb(196, 196, 68);
+    text-decoration: none;
+    cursor: pointer;
+}
+.bodytd1{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+.video{
+    width: 100%;
+    height: auto;
+}
+.menutd{
+    position: absolute;
+    position: fixed;
+    top:0px;
+    height: 150px;
+    width: 100%;
+    background-color:none;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.imgtd{
+    width: 20%;
+    margin-top: 20px;
+cursor: pointer;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.menu-item{
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    
+}
+.trangchu{
+    color: rgb(196, 196, 67);
+    font-size: 35px;
+    cursor: pointer;
+}
+.wrap{
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+padding-left: 70px;
+}
+.menu-item2{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrap:hover{
+    color: rgb(173, 173, 50);
+}
+.input{
+    position: absolute;
+    display: flex;
+justify-content: center;
+align-items: center;
+top:800px;
+left: 23%;
+}
+.text1{
+    color: white;
+    border: 1px solid white;
+    border-radius: 50px;
+    margin-left: 20px;
+    background: none;
+    width: 500px;
+    height: 90px;
+    font-size: 40px;
+    padding-left: 40px;
+   
+}
+.text2{
+    font-size: 40px;
+    margin-left: 10px;
+    background-color: rgb(216, 68, 15);
+    padding-left: 10px;
+    width: 300px;
+    height: 90px;
+    border: 1px solid orangered;
+    border-radius: 50px;
+    color: white;
+}
+.viec{
+    width: 100%;
+    height: 300px;
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.bodytd2{
+    display: flex;
+    height: auto;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.khoi1{
+    width: 900px;
+    height: 900px;
+}
+.khoi2{
+    width: 900px;
+    height: 900px;
+    margin-left: 80px;
+    padding-left: 50px;
+}
+.ctimgtd1{
+    text-align: center;
+    font-size: 80px;
+    margin-top: 20px;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    cursor: pointer;
+}
+.imgcss{
+    border-radius: 100%;
+    width: 100%;
+    transition: 3s all ease-in-out;
+
+}
+
+.imgtd1{
+    width: 650px;
+    height: 650px;
+    overflow: hidden;
+    margin: 0 auto;
+    border-radius: 100%;
+}
+.imgtd1:hover .imgcss{
+    transform: scale(1.5);
+}
+ 
