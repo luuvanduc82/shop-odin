@@ -58,6 +58,10 @@ display: flex;
     font-size: 30px;
     cursor: pointer;
 }
+.modal-cus{
+    width: 500px;
+    height: 500px;
+}
 .none{
     width: 33.33%;
 }
