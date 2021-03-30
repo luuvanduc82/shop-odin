@@ -23,8 +23,9 @@ color: cornflowerblue;
     display: flex;
     text-align: left;
     align-items: center;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 700;
+    width: 500px;
     font-family: 'Courier New', Courier, monospace;
 }
 .scr-spm{
