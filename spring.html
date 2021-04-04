@@ -1,14 +1,16 @@
-<!DOCTYPE HTML>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="App.css">
-    <link rel="stylesheet" href="Ttn.css">
+    <link rel="stylesheet" href="spm.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
-    <title>React App</title>
+    <title>Reat App</title>
 </head>
 
 <body>
@@ -25,13 +27,32 @@
             <div class="body2">
                 <div class="none"></div>
                 <div class="name">
-                   <a href="routin.html"> <img width="200px" height="auto"
-                        src="https://theme.hstatic.net/1000341789/1000533258/14/logo.png?v=710" /></a>
+                    <img width="200px" height="auto"
+                        src="https://theme.hstatic.net/1000341789/1000533258/14/logo.png?v=710" />
                 </div>
                 <div class="item">
-                    <div class="item-menu"><a href="dangnhap.html"><i class="fas fa-user-circle"></i></a></div>
-                    <div class="item-menu"><i class="fas fa-search"></i></div>
-                    <div class="item-menu"><i class="fas fa-shopping-bag"></i></div>
+                    <div title="Tài Khoản" class="item-menu"><a href="dangnhap.html"><i
+                                class="fas fa-user-circle"></i></a></div>
+                    <div title="Tìm kiếm" class="w3-container ">
+                        <button onclick="opentk()" class="w3-button w3-black color-btn"><i
+                                class="fas fa-search"></i></button>
+
+                        <div id="id01" class="w3-modal">
+                            <div class="w3-modal-content w3-animate-right w3-card-4  modal-cus">
+                                <header class="w3-container">
+                                    <span onclick="closetk()" class="w3-button w3-display-topright">&times;</span>
+                                </header>
+                                <div class="w3-container">
+                                    <div class="timkiem">TÌM KIẾM</div>
+                                    <div style="text-align: left; margin-left: 50px; margin-top: 20px;" class="text">
+                                        <input class="text1" type="text" placeholder="Tìm Kiếm Sản Phẩm">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div title="Giỏ hàng" style="padding-left: 5px;" class="item-menu"><i
+                            class="fas fa-shopping-bag"></i></div>
                 </div>
             </div>
             <div class="body3">
@@ -55,7 +76,8 @@
                 </div>
                 <div class="conten"><a href="hethongcuahang.html"> Hệ Thống Cửa Hàng</a></div>
                 <div class="conten"><a href="chinhsachkhachhang.html">Chính Sách Khách Hàng</a></div>
-                <div style="text-decoration: underline;" class="conten"><a href="huongdanchonsize.html">Hướng Dẫn Chọn Size</a><i class="fas fa-sort-down"></i>
+                <div class="conten"><a href="huongdanchonsize.html">Hướng Dẫn Chọn Size</a><i
+                        class="fas fa-sort-down"></i>
                     <div class="dropdown">
                         <div class="conten-drop">Sản Phẩm Cho Nam</div>
                         <div class="conten-drop">Sản Phẩm Cho Nữ</div>
@@ -63,24 +85,37 @@
                 </div>
                 <div class="conten"><a href="tuyendung.html">Tuyển Dụng</a></div>
             </div>
-            <div class="body4ht">
-                <div class="trangchu"><a href="ODIN.HTML">Trang Chủ</a></div>
-                <div class="hethong"> / Hướng Dẫn Chọn Size Sản Phẩm Routin</div>
+            <div class="menuspm">
+                <div class="menuspm1"><a href="routin.html">Trang Chủ /</a></div>
+                <div class="menuspm1"><a href="danhmuc.html">Danh Mục /</a></div>
+                <div style="font-size: 20px; font-family: 'Courier New', Courier, monospace;">Spring Collection 2021</div>
             </div>
-            <div class="body5ht">
-                <div class="danhmuc">
-                    <div class="dmt">DANH MỤC TRANG</div>
-                    <div class="infdmt">
-                        <div class="infdmt1"> Chính Sách Đổi SP Khi Mua Tại Cửa Hàng</div>
-                        <div class="infdmt1">Chính Sách Đổi SP Khi Mua Online</div>
-                        <div class="infdmt1">Chính Sách Trả Sản Phẩm</div>
+            <div class="body4spm">
+                <div class="spm1">Spring Collection 2021</div>
+                <div class="scr-spm">
+                    <select style="border: none;" id="cars">
+                        <option value="spnb">Sản Phẩm Nổi Bật</option>
+                        <option value="spnb">Giá Tăng Dần</option>
+                        <option value="spnb">Giá Giảm Dần</option>
+                        <option value="spnb">Từ A-Z</option>
+                        <option value="spnb">Từ Z-A</option>
+                        <option value="spnb">Mới Nhất</option>
+                        <option value="spnb">Cũ Nhất</option>
+                        <option value="spnb">Bán Chạy Nhất</option>
+                    </select>
+                </div>
+            </div>
+            <div class="list-body5">
+                <div class="list-img">
+                    <div> <img width="242px" height="359px"
+                            src="https://product.hstatic.net/1000341789/product/mausac_moon_indigo_10s20pca002__4__d1e27084635a459fac435c1f0a1ba5ec_1024x1024.jpg" />
+                    </div>
+                    <div class="conten-img">
+                        <div class="conten1-img5">Quần Kaki Nam Form carrot</div>
+                        <div class="conten2-img5">400.000₫</div>
                     </div>
                 </div>
-                <div class="htchct">
-                    <div class="htchct1">HỆ THỐNG CỬA HÀNG CHÍNH THỨC</div>
-                    <div class="imghd"><img width="950px" height="auto" src="https://file.hstatic.net/1000341789/file/z2274856491274_cfb94a3158272d8f19ff5e65bf332790_6a088576bb6d4d3ba610adc0f025431c_master.jpg"></div>
-                </div>
-                </div>
+            </div>
                 <div class="text-dk">
                     <div class="text">
                         <input class="wrapper" type="text " placeholder="Đăng ký để nhận thông tin" />
@@ -138,14 +173,23 @@
                         </div>
                     </div>
                 </div>
-    
-    
+
+
             </div>
             <div class="finish">
-               <div class="kt"> ROUTINE CO ,. LTD | Mã Số Thuế: 0106486365 | Văn Phòng: Tầng 10 Tòa Nhà IMC, 62 Trần Quang Khải, Phường Tân Định, Quận 1, Tp.HCM</div>
-            </div>
+                <div class="kt"> ROUTINE CO ,. LTD | Mã Số Thuế: 0106486365 | Văn Phòng: Tầng 10 Tòa Nhà IMC, 62 Trần
+                    Quang
+                    Khải, Phường Tân Định, Quận 1, Tp.HCM</div>
             </div>
         </div>
-    </body>
-    
-    </html>
+</body>
+<script>
+    function opentk() {
+        document.getElementById('id01').style.display = 'block'
+    }
+    function closetk() {
+        document.getElementById('id01').style.display = 'none'
+    }
+</script>
+
+</html>

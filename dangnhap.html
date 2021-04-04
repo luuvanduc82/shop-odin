@@ -1,5 +1,7 @@
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="App.css">
     <link rel="stylesheet" href="dangnhap.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
@@ -9,38 +11,66 @@
 </head>
 
 <body>
-    <div class="odin">
-        <div class="head-infomation">
-            <div class="hotlinemua"> Hotline Mua Hàng:</div>
-            <div class="number1">0359966542</div>
-            <div class="hotlinemua">| Hotline CSKH:</div>
-            <div class="number2">1900 69 69 69</div>
-            <div class="hotlinemua">- Ext 1 |Email CSKH:</div>
-            <div class="cskh">cskh@odin.vn</div>
+    <div class="body2">
+        <div class="none"></div>
+        <div class="name">
+            <img width="200px" height="auto"
+                src="https://theme.hstatic.net/1000341789/1000533258/14/logo.png?v=710" />
         </div>
-        <div class="body">
-            <div class="body2">
-                <div class="none"></div>
-                <div class="name">
-                    <a href="routin.html">
-                        <img width="200px" height="auto"
-                            src="https://theme.hstatic.net/1000341789/1000533258/14/logo.png?v=710" />
-                            </a>
-                </div>
-                <div class="item">
-                    <div class="item-menu"><a href="dangnhap.html"><i class="fas fa-user-circle"></i></a></div>
-                    <div class="item-menu"><i class="fas fa-search"></i></div>
-                    <div class="item-menu"><i class="fas fa-shopping-bag"></i></div>
+        <div class="item">
+            <div title="Tài Khoản" class="item-menu"><a href="dangnhap.html"><i
+                        class="fas fa-user-circle"></i></a></div>
+            <div title="Tìm kiếm" class="w3-container ">
+                <button onclick="opentk()" class="w3-button w3-black color-btn"><i
+                        class="fas fa-search"></i></button>
+
+                <div id="id01" class="w3-modal">
+                    <div class="w3-modal-content w3-animate-right w3-card-4  modal-cus">
+                        <header class="w3-container">
+                            <span onclick="closetk()" class="w3-button w3-display-topright">&times;</span>
+                        </header>
+                        <div class="w3-container">
+                            <div class="timkiem">TÌM KIẾM</div>
+                            <div style="text-align: left; margin-left: 50px; margin-top: 20px;" class="text">
+                                <input class="text1" type="text" placeholder="Tìm Kiếm Sản Phẩm"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="body3">
-                <div class="conten"><a href="thoitrangnam.html">Thời Trang Nam</a></div>
-                <div class="conten"><a href="thoitrangnu.html"> Thời Trang Nữ</a></div>
-                <div class="conten"><a href="hethongcuahang.html"> Hệ Thống Cửa Hàng</a></div>
-                <div class="conten"><a href="chinhsachkhachhang.html">Chính Sách Khách Hàng</a></div>
-                <div class="conten"><a href="huongdanchonsize.html">Hướng Dẫn Chọn Size</a></div>
-                <div class="conten"><a href="tuyendung.html">Tuyển Dụng</a></div>
+            <div title="Giỏ hàng" style="padding-left: 5px;" class="item-menu"><i
+                    class="fas fa-shopping-bag"></i></div>
+        </div>
+    </div>
+    <div class="body3">
+        <div class="conten"><a href="thoitrangnam.html">Thời Trang Nam</a><i class="fas fa-sort-down"></i>
+            <div class="dropdown">
+                <div class="conten-drop">Concept Collection</div>
+                <div class="conten-drop">Áo Nam</div>
+                <div class="conten-drop">Quần Nam</div>
+                <div class="conten-drop">Giày Dép Nam</div>
+                <div class="conten-drop">Phụ Kiện</div>
             </div>
+        </div>
+        <div class="conten"><a href="thoitrangnu.html"> Thời Trang Nữ</a><i class="fas fa-sort-down"></i>
+            <div class="dropdown">
+                <div class="conten-drop">Concept Collection</div>
+                <div class="conten-drop">Áo Nữ</div>
+                <div class="conten-drop">Quần Nữ</div>
+                <div class="conten-drop">Đầm</div>
+                <div class="conten-drop">Chân Váy</div>
+            </div>
+        </div>
+        <div class="conten"><a href="hethongcuahang.html"> Hệ Thống Cửa Hàng</a></div>
+        <div class="conten"><a href="chinhsachkhachhang.html">Chính Sách Khách Hàng</a></div>
+        <div class="conten"><a href="huongdanchonsize.html">Hướng Dẫn Chọn Size</a><i
+                class="fas fa-sort-down"></i>
+            <div class="dropdown">
+                <div class="conten-drop">Sản Phẩm Cho Nam</div>
+                <div class="conten-drop">Sản Phẩm Cho Nữ</div>
+            </div>
+        </div>
+        <div class="conten"><a href="tuyendung.html">Tuyển Dụng</a></div>
+    </div>
             <div class="body4dn">
                 <div class="dangnhap">
                     <div class="conten-dn"> ĐĂNG NHẬP</div>
@@ -63,45 +93,7 @@
                     </div>
                 </div>
             </div>
-            <div style="width: 200px; background-color: yellow; height: 100px;" onclick="prev()">
-                 lùi
-            </div>
-            <div style="width: 200px; background-color: brown; height: 100px;" onclick="next()">
-                tiếp theo
-            </div>
-            <!-- <div id="thanhtest" class="ads">
-                <div class="test">
-                    ádas
-                </div>
-                <div class="test">
-                    sdfe
-                </div>
-                <div class="test">
-                    rryey
-                </div>
-                <div class="test">
-                    ôiuytr
-                </div>
-        
-                <div class="test">
-                    sdfgfv
-                </div>
-                <div class="test">
-                    mhgfv
-                </div>
-                <div class="test">
-                    ưerfdfgg
-                </div>
-                <div class="test">
-                    fvgjhegd
-                </div>
-                <div class="test">
-                    sdfgfd
-                </div>
-                <div class="test">
-                    fghjuyg
-                </div>
-            </div> -->
+           
         </div>
         <div class="text-dk">
             <div class="text">
@@ -167,22 +159,12 @@
        <div class="kt"> ROUTINE CO ,. LTD | Mã Số Thuế: 0106486365 | Văn Phòng: Tầng 10 Tòa Nhà IMC, 62 Trần Quang Khải, Phường Tân Định, Quận 1, Tp.HCM</div>
     </div>
 </body>
-<!-- <script>
-    function next(){
-        let dom = document.getElementById("thanhtest");
-        let currPosition = dom.scrollLeft;
-        dom.scrollTo({
-            left: currPosition + 300,
-            behavior:"smooth"
-        });
+<script>
+     function opentk() {
+        document.getElementById('id01').style.display = 'block'
     }
-    function prev(){
-        let dom = document.getElementById("thanhtest");
-        let currPosition = dom.scrollLeft;
-        dom.scrollTo({
-            left: currPosition - 300,
-            behavior:"smooth"
-        });
+    function closetk() {
+        document.getElementById('id01').style.display = 'none'
     }
-</script> -->
+</script>
 </html>

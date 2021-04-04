@@ -3,6 +3,8 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="App.css">
     <link rel="stylesheet" href="spm.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
@@ -25,18 +27,33 @@
             <div class="body2">
                 <div class="none"></div>
                 <div class="name">
-                    <a href="routin.html">
-                        <img width="200px" height="auto"
+                    <a href="routin.html"> <img width="200px" height="auto"
                             src="https://theme.hstatic.net/1000341789/1000533258/14/logo.png?v=710" />
                     </a>
                 </div>
                 <div class="item">
                     <div title="Tài Khoản" class="item-menu"><a href="dangnhap.html"><i
                                 class="fas fa-user-circle"></i></a></div>
-                    <div title="Tìm kiếm" class="item-menu">
-                        <i class="fas fa-search"></i>
+                    <div title="Tìm kiếm" class="w3-container ">
+                        <button onclick="opentk()" class="w3-button w3-black color-btn"><i
+                                class="fas fa-search"></i></button>
+
+                        <div id="id01" class="w3-modal">
+                            <div class="w3-modal-content w3-animate-right w3-card-4  modal-cus">
+                                <header class="w3-container">
+                                    <span onclick="closetk()" class="w3-button w3-display-topright">&times;</span>
+                                </header>
+                                <div class="w3-container">
+                                    <div class="timkiem">TÌM KIẾM</div>
+                                    <div style="text-align: left; margin-left: 50px; margin-top: 20px;" class="text">
+                                        <input class="text1" type="text" placeholder="Tìm Kiếm Sản Phẩm">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div title="Giỏ hàng" class="item-menu"><i class="fas fa-shopping-bag"></i></div>
+                    <div title="Giỏ hàng" style="padding-left: 5px;" class="item-menu"><i
+                            class="fas fa-shopping-bag"></i></div>
                 </div>
             </div>
             <div class="body3">
@@ -70,7 +87,7 @@
                 <div class="conten"><a href="tuyendung.html">Tuyển Dụng</a></div>
             </div>
             <div class="menuspm">
-                <div class="menuspm1"><a href="ODIN.html">Trang Chủ /</a></div>
+                <div class="menuspm1"><a href="routin.html">Trang Chủ /</a></div>
                 <div class="menuspm1"><a href="danhmuc.html">Danh Mục /</a></div>
                 <div style="font-size: 20px; font-family: 'Courier New', Courier, monospace;">Tất Cả Sản Phẩm</div>
             </div>
@@ -306,9 +323,18 @@
 
         </div>
         <div class="finish">
-           <div class="kt"> ROUTINE CO ,. LTD | Mã Số Thuế: 0106486365 | Văn Phòng: Tầng 10 Tòa Nhà IMC, 62 Trần Quang Khải, Phường Tân Định, Quận 1, Tp.HCM</div>
+            <div class="kt"> ROUTINE CO ,. LTD | Mã Số Thuế: 0106486365 | Văn Phòng: Tầng 10 Tòa Nhà IMC, 62 Trần Quang
+                Khải, Phường Tân Định, Quận 1, Tp.HCM</div>
         </div>
-        </div>
+    </div>
 </body>
+<script>
+    function opentk() {
+        document.getElementById('id01').style.display = 'block'
+    }
+    function closetk() {
+        document.getElementById('id01').style.display = 'none'
+    }
+</script>
 
 </html>

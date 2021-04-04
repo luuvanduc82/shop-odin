@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="App.css">
+    <link rel="stylesheet" href="spm.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <title>Reat App</title>
+</head>
+
+<body>
+    <div class="odin">
+        <div class="head-infomation">
+            <div class="hotlinemua"> Hotline Mua Hàng:</div>
+            <div class="number1">0359966542</div>
+            <div class="hotlinemua">| Hotline CSKH:</div>
+            <div class="number2">1900 69 69 69</div>
+            <div class="hotlinemua">- Ext 1 |Email CSKH:</div>
+            <div class="cskh">cskh@odin.vn</div>
+        </div>
+        <div class="body">
+            <div class="body2">
+                <div class="none"></div>
+                <div class="name">
+                    <img width="200px" height="auto"
+                        src="https://theme.hstatic.net/1000341789/1000533258/14/logo.png?v=710" />
+                </div>
+                <div class="item">
+                    <div title="Tài Khoản" class="item-menu"><a href="dangnhap.html"><i
+                                class="fas fa-user-circle"></i></a></div>
+                    <div title="Tìm kiếm" class="w3-container ">
+                        <button onclick="opentk()" class="w3-button w3-black color-btn"><i
+                                class="fas fa-search"></i></button>
+
+                        <div id="id01" class="w3-modal">
+                            <div class="w3-modal-content w3-animate-right w3-card-4  modal-cus">
+                                <header class="w3-container">
+                                    <span onclick="closetk()" class="w3-button w3-display-topright">&times;</span>
+                                </header>
+                                <div class="w3-container">
+                                    <div class="timkiem">TÌM KIẾM</div>
+                                    <div style="text-align: left; margin-left: 50px; margin-top: 20px;" class="text">
+                                        <input class="text1" type="text" placeholder="Tìm Kiếm Sản Phẩm">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div title="Giỏ hàng" style="padding-left: 5px;" class="item-menu"><i
+                            class="fas fa-shopping-bag"></i></div>
+                </div>
+            </div>
+            <div class="body3">
+                <div class="conten"><a href="thoitrangnam.html">Thời Trang Nam</a><i class="fas fa-sort-down"></i>
+                    <div class="dropdown">
+                        <div class="conten-drop">Concept Collection</div>
+                        <div class="conten-drop">Áo Nam</div>
+                        <div class="conten-drop">Quần Nam</div>
+                        <div class="conten-drop">Giày Dép Nam</div>
+                        <div class="conten-drop">Phụ Kiện</div>
+                    </div>
+                </div>
+                <div class="conten"><a href="thoitrangnu.html"> Thời Trang Nữ</a><i class="fas fa-sort-down"></i>
+                    <div class="dropdown">
+                        <div class="conten-drop">Concept Collection</div>
+                        <div class="conten-drop">Áo Nữ</div>
+                        <div class="conten-drop">Quần Nữ</div>
+                        <div class="conten-drop">Đầm</div>
+                        <div class="conten-drop">Chân Váy</div>
+                    </div>
+                </div>
+                <div class="conten"><a href="hethongcuahang.html"> Hệ Thống Cửa Hàng</a></div>
+                <div class="conten"><a href="chinhsachkhachhang.html">Chính Sách Khách Hàng</a></div>
+                <div class="conten"><a href="huongdanchonsize.html">Hướng Dẫn Chọn Size</a><i
+                        class="fas fa-sort-down"></i>
+                    <div class="dropdown">
+                        <div class="conten-drop">Sản Phẩm Cho Nam</div>
+                        <div class="conten-drop">Sản Phẩm Cho Nữ</div>
+                    </div>
+                </div>
+                <div class="conten"><a href="tuyendung.html">Tuyển Dụng</a></div>
+            </div>
+            <div class="menuspm">
+                <div class="menuspm1"><a href="routin.html">Trang Chủ /</a></div>
+                <div class="menuspm1"><a href="danhmuc.html">Danh Mục /</a></div>
+                <div style="font-size: 20px; font-family: 'Courier New', Courier, monospace;">Fall Winter 2021</div>
+            </div>
+            <div class="body4spm">
+                <div class="spm1">Fall Winter 2021</div>
+                <div class="scr-spm">
+                    <select style="border: none;" id="cars">
+                        <option value="spnb">Sản Phẩm Nổi Bật</option>
+                        <option value="spnb">Giá Tăng Dần</option>
+                        <option value="spnb">Giá Giảm Dần</option>
+                        <option value="spnb">Từ A-Z</option>
+                        <option value="spnb">Từ Z-A</option>
+                        <option value="spnb">Mới Nhất</option>
+                        <option value="spnb">Cũ Nhất</option>
+                        <option value="spnb">Bán Chạy Nhất</option>
+                    </select>
+                </div>
+            </div>
+            <div class="list-body5">
+                <div class="list-img">
+                    <div> <img width="242px" height="359px"
+                            src="https://product.hstatic.net/1000341789/product/mausac_blue_10f20kni002__1__bf7abc43d3d9444c885fefe462cf51b2_1024x1024.jpg" />
+                    </div>
+                    <div class="conten-img">
+                        <div class="conten1-img5">Áo Len Nam Phối Màu</div>
+                        <div class="conten2-img5">400.000₫</div>
+                    </div>
+                </div>
+                <div class="list-img">
+                    <div>
+                        <img width="242px" height="359px"
+                            src="https://product.hstatic.net/1000341789/product/mausac_beige_10f20shl040__1__a9e2927a61154f238b5f2243a9c4d7a2_1024x1024.jpg" />
+                    </div>
+                    <div class="conten-img">
+                        <div class="conten1-img5">Áo Sơ Mi Nam Tay Dài Caro</div>
+                        <div class="conten2-img5">350.000₫</div>
+                    </div>
+                </div>
+                <div class="list-img">
+                    <div>
+                        <img width="242px" height="359px"
+                            src="https://product.hstatic.net/1000341789/product/mausac_apple_10f20hod001__2__8750795c43c445e09d3ab97e5b6c57ce_1024x1024.jpg" />
+                    </div>
+                    <div class="conten-img">
+                        <div class="conten1-img5">Áo Thun Nam Tay Ngắn Có Mũ</div>
+                        <div class="conten2-img5">250.000₫</div>
+                    </div>
+                </div>
+                <div class="list-img">
+                    <div>
+                        <img width="242px" height="359px"
+                            src="https://product.hstatic.net/1000341789/product/mausac_apple_10f20swe011__3__e6fb66002aba4134bf989ab717db9747_1024x1024.jpg" />
+                    </div>
+                    <div class="conten-img">
+                        <div class="conten1-img5">Áo Thun Nam Tay Dài Nỉ</div>
+                        <div class="conten2-img5">400.000₫</div>
+                    </div>
+                </div>
+                <div class="list-img">
+                    <div>
+                        <img width="242px" height="359px"
+                            src="https://product.hstatic.net/1000341789/product/mausac_black_10f20jac001__3__ff79bf08920a4f1bae3be74243ea4339_1024x1024.jpg" />
+                    </div>
+                    <div class="conten-img">
+                        <div class="conten1-img5">Áo Khoác Caro Form Regular</div>
+                        <div class="conten2-img5">700.000₫</div>
+                    </div>
+                </div>
+            </div>
+            <div class="list2-body5">
+                <div class="list-img1">
+                    <div>
+                        <img width="242px" height="359px"
+                            src="https://product.hstatic.net/1000341789/product/mausac_green_10f20kni003_019076c517b44ac5a160c55a17782341_1024x1024.jpg" />
+                    </div>
+                    <div class="conten1-img">
+                        <div class="conten3-img5">Áo Len Phối Màu Form Regular/div>
+                            <div class="conten4-img5">400.000₫</div>
+                        </div>
+                    </div>
+                </div>
+                    <div class="list-img1">
+                        <div>
+                            <img width="242px" height="359px"
+                                src="https://product.hstatic.net/1000341789/product/mausac_brightwhite_10f20tsh024.1jpg__2__f1d6d284b54e4175a810a2549ea39bc4_1024x1024.jpg" />
+                        </div>
+                        <div class="conten1-img">
+                            <div class="conten3-img5">Áo Thun Tay Ngắn In Sọc</div>
+                            <div class="conten4-img5">300.000₫</div>
+                        </div>
+                    </div>
+                    <div class="list-img1">
+                        <div>
+                            <img width="242px" height="359px"
+                                src="https://product.hstatic.net/1000341789/product/mausac_lindigo_10f20dskw007__1__6da5daaece7644eebe70322e9da9525a_1024x1024.jpg" />
+                        </div>
+                        <div class="conten1-img">
+                            <div class="conten3-img5">Chân Váy Jean Xé Trước</div>
+                            <div class="conten4-img5">450.000₫</div>
+                        </div>
+                    </div>
+                    <div class="list-img1">
+                        <div>
+                            <img width="242px" height="359px"
+                                src="https://product.hstatic.net/1000341789/product/mausac_black_10f20swe010__1__d8470956085540fcade296fa8b6e411c_1024x1024.jpg" />
+                        </div>
+                        <div class="conten1-img">
+                            <div class="conten3-img5">Áo Nỉ Tay Dài Nam</div>
+                            <div class="conten4-img5">500.000₫</div>
+                        </div>
+                    </div>
+                    <div class="list-img1">
+                        <div>
+                            <img width="242px" height="359px"
+                                src="https://product.hstatic.net/1000341789/product/mausac_white_10f20shl025__1__fe6dd5b7bec9496e9934e036d0ffa02a_1024x1024.jpg" />
+                        </div>
+                        <div class="conten1-img">
+                            <div class="conten3-img5">Áo Sơ Mi Nam Tayy dài Sọc</div>
+                            <div class="conten4-img5">390.000₫</div>
+                        </div>
+                    </div>
+                </div></div>
+                <div class="list2-body5">
+                    <div class="list-img1">
+                        <div>
+                            <img width="242px" height="359px"
+                                src="https://product.hstatic.net/1000341789/product/mausac_chipmonk_10f20pol017__2__d4f7f0c1dee04dbd981767b305806c35_1024x1024.jpg" />
+                        </div>
+                        <div class="conten1-img">
+                            <div class="conten3-img5">Áo Polo Nam Tay Ngắn</div>
+                            <div class="conten4-img5">460.000₫</div>
+                        </div>
+                    </div>
+                    <div class="list-img1">
+                        <div>
+                            <img width="242px" height="359px"
+                                src="https://product.hstatic.net/1000341789/product/mausac_chipmonk_10f20tsh007__1__486932095be145de8913e9c32d85b11f_1024x1024.jpg" />
+                        </div>
+                        <div class="conten1-img">
+                            <div class="conten3-img5">Áo Thun Tay Dài Cổ Trụ</div>
+                            <div class="conten4-img5">380.000₫</div>
+                        </div>
+                    </div>
+                    <div class="list-img1">
+                        <div>
+                            <img width="242px" height="359px"
+                                src="https://product.hstatic.net/1000341789/product/mausac_pink_10f20shl036__1__ddcf79c06b694fb6a66657516b2a8852_1024x1024.jpg" />
+                        </div>
+                        <div class="conten1-img">
+                            <div class="conten3-img5">Áo Sơ Mi Nam Tay Dài</div>
+                            <div class="conten4-img5">450.000₫</div>
+                        </div>
+                    </div>
+                    <div class="list-img1">
+                        <div>
+                            <img width="242px" height="359px"
+                                src="https://product.hstatic.net/1000341789/product/mausac_wind_10f20tsh027__3__999c28b4144c452391d3cea002ca8c4e_1024x1024.jpg" />
+                        </div>
+                        <div class="conten1-img">
+                            <div class="conten3-img5">Áo Thun Tay Dài Form Regular</div>
+                            <div class="conten4-img5">400.000₫</div>
+                        </div>
+                    </div>
+                    <div class="list-img1">
+                        <div>
+                            <img width="242px" height="359px"
+                                src="https://product.hstatic.net/1000341789/product/mausac_sky_10f20shl020__4__e9e5590dd33a4ebbbd66e7bed5f819d2_1024x1024.jpg" />
+                        </div>
+                        <div class="conten1-img">
+                            <div class="conten3-img5">Áo Sơ Mi Corduroy</div>
+                            <div class="conten4-img5">420.000₫</div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="text-dk">
+                    <div class="text">
+                        <input class="wrapper" type="text " placeholder="Đăng ký để nhận thông tin" />
+                    </div>
+                    <div class="dk">
+                        <div class="dangky">ĐĂNG KÝ</div>
+                    </div>
+                </div>
+            </div>
+            <div class="body6">
+                <div class="company">
+                    <div class="ct">CÔNG TY</div>
+                    <div class="infct">
+                        <div class="infct1">Giới Thoại Về Routin</div>
+                        <div class="infct1">Tuyển Dụng</div>
+                        <div class="infct1">Hệ Thống Cửa Hàng</div>
+                        <div class="infct1">Chăm Sóc Khách Hàng</div>
+                        <div class="infct1">Chính Sách Bảo Mật</div>
+                    </div>
+                </div>
+                <div class="company">
+                    <div class="ct">Chính Sách Khách Hàng</div>
+                    <div class="infct">
+                        <div class="infct1">Chính Sách Khách Hàng Thân Thiết</div>
+                        <div class="infct1">Chính Sách Đổi Trả</div>
+                        <div class="infct1">Chính Sách Bảo Hành</div>
+                        <div class="infct1">Câu Hỏi Thường Gặp</div>
+                    </div>
+                </div>
+                <div class="company">
+                    <div class="ct">Kết Nối Với Routin</div>
+                    <div class="infimg1">
+                        <img width="35px" height="35px"
+                            src="https://theme.hstatic.net/1000341789/1000533258/14/anhicon1.png?v=710" />
+                        <img width="35px" height="35px"
+                            src="https://theme.hstatic.net/1000341789/1000533258/14/anhicon2.png?v=710" />
+                        <img width="35px" height="35px"
+                            src="https://theme.hstatic.net/1000341789/1000533258/14/anhicon3.png?v=710" />
+                        <img width="35px" height="35px"
+                            src="https://theme.hstatic.net/1000341789/1000533258/14/anhicon4.png?v=710" />
+                    </div>
+                    <div class="infimg">
+                        <img width="110px" height="45px"
+                            src="https://theme.hstatic.net/1000341789/1000533258/14/logo-bct.png?v=710" />
+                    </div>
+                </div>
+                <div class="company">
+                    <div class="ct">Thông Tin Cửa Hàng</div>
+                    <div class="infct">
+                        <div class="infct2">Cửa Hàng Thứ 29:</div>
+                        <div class="infct1">Địa Chỉ:14A Nguyễn Đình Chiểu Phường DaKao Quận 1</div>
+                        <div class="infct2">Cửa Hàng Thứ 28:</div>
+                        <div class="infct1">Tầng 111 GiGaMall Đường Phạm Văn Đồng Quận Gò Vấp</div>
+                        <div class="infct3">>>>Xem Tất Cả Cửa Hàng<<<< </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="finish">
+                <div class="kt"> ROUTINE CO ,. LTD | Mã Số Thuế: 0106486365 | Văn Phòng: Tầng 10 Tòa Nhà IMC, 62 Trần
+                    Quang
+                    Khải, Phường Tân Định, Quận 1, Tp.HCM</div>
+            </div>
+        </div>
+</body>
+<script>
+    function opentk() {
+        document.getElementById('id01').style.display = 'block'
+    }
+    function closetk() {
+        document.getElementById('id01').style.display = 'none'
+    }
+</script>
+
+</html>
